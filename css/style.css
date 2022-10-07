@@ -441,6 +441,9 @@ a {
     border-radius: 4px;
 
     margin-bottom: 10px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkpoints:focus ~ .icon-email, .checkpoints:focus ~ .icon-name, .checkpoints:focus ~ .icon-phone, .checkpoints:focus {
     fill: var(--accent-color);
@@ -459,6 +462,9 @@ a {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea::placeholder {
     font-size: 12px;
@@ -471,24 +477,23 @@ a {
     appearance: none;
     position: absolute;
 }
+
 .svg-check {
+    width: 15px;
+    height: 14px;
+    fill: var(--accent-color);
     display: inline-block;
-    width: 16px;
-    height: 15px;
     border-radius: 2px;
-    border: 2px solid var(--title-text-color);
     background-origin: border-box;
+    border: 2px solid var(--title-text-color);
     margin-right: 8px;
 }
-.agree-link {
-    text-decoration: underline;
-    color: var(--accent-color);
-}
-.check-point:checked ~ .svg-check{
-    border: 2px solid var(--accent-color);
+.check-point:checked ~ .svg-check {
+    border-color: var(--accent-color);
     background-image: url(../images/iconcheck.svg);
     background-size: contain;
 }
+
 .submit {
     display: block;
     margin-top: 30px;
@@ -516,8 +521,15 @@ a {
     position: absolute;
     top: 14px;
     left: 15px;
-}
 
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agree-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
 
 /*                    ABOUT US SECTION                    */
 
