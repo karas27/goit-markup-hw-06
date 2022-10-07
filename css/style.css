@@ -254,6 +254,62 @@ a {
 .white {
     fill: var(--white-color);
 }
+.join-us {
+    position: relative;
+    display: flex;
+    direction: column;
+    width: 570px;
+    margin-left: 93px;
+}
+.join-email {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.join-place {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-color);
+    padding: 15px;
+}
+.join-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    
+    color: var(--white-color);
+}
+.joinus-text {
+    display: block;
+    margin-bottom: 20px;
+}
+.join-img {
+    margin-left: 9px;
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!STUDIO PAGE!!!!!!!!!!!!!!!!!!!!!*/
 /*                                      HERO SECTION                 */
 .hero{
@@ -316,8 +372,8 @@ a {
     top: 50%;
     left: 50%;
     scroll-behavior: none;
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -335,7 +391,7 @@ a {
     top: 8px;
     right: 8px;
     background-color: var(--white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -343,6 +399,126 @@ a {
     width: 11px;
     height: 11px;
 }
+.close-modal:focus .close-icon{
+    fill: var(--accent-color);
+}
+.form {
+    padding: 40px;
+}
+.form-titel {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+}
+.form-label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+
+    margin-bottom: 4px;
+}
+.checkpoint-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkpoints {
+    position: relative;
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    margin-bottom: 10px;
+}
+.checkpoints:focus ~ .icon-email, .checkpoints:focus ~ .icon-name, .checkpoints:focus ~ .icon-phone, .checkpoints:focus {
+    fill: var(--accent-color);
+}
+.checkpoints:focus, .textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+.textarea {
+    padding-left: 16px;
+    padding-top: 12px;
+    margin-bottom: 25px;
+    resize: none;
+    width: 448px;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+.check-point {
+    appearance: none;
+    position: absolute;
+}
+.svg-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--title-text-color);
+    background-origin: border-box;
+    margin-right: 8px;
+}
+.agree-link {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+.check-point:checked ~ .svg-check{
+    border: 2px solid var(--accent-color);
+    background-image: url(../images/iconcheck.svg);
+    background-size: contain;
+}
+.submit {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+.icon-wraper {
+    position: relative;
+}
+.icon-name, .icon-email, .icon-phone {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+
+
 /*                    ABOUT US SECTION                    */
 
 .about-desription, .typeofproduct-item, .whatwedo-list, .ourteam-list {

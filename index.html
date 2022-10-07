@@ -60,6 +60,48 @@
                         <use href="./images/icons.svg#icon-modal-close"></use>
                     </svg>
                 </button>
+                  <form class="form">
+                    <span class="form-titel">Залиште свої дані, ми вам передзвонимо</span>
+                    <div class="form-field">
+                        <label for="name" class="form-label">Ім'я</label>
+                        <div class="icon-wraper">
+                        <input type="text" name="name" id='name' class="checkpoints">
+                            <svg class="icon-name" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                        
+                    </div>
+                    <div class="form-field">
+                        <label for="tel" class="form-label">Телефон</label>
+                        <div class="icon-wraper">
+                        <input type="tel" name="tel" id="tel" class="checkpoints">
+                        <svg class="icon-phone" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg></div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="form-label">Пошта</label>
+                        <div class="icon-wraper">
+                            <input type="text" name="email" id="email" class="checkpoints">
+                            <svg class="icon-email" width="12" height="12">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="coment" class="form-label">Коментар</label>
+                        <textarea name="coment" id="coment" placeholder="Введіть текст" class="textarea">
+                        </textarea></div>
+                    <div class="form-field">
+                        <label for="check" class="checkpoint-label">
+                            <input type="checkbox" name="check" id="check" class="check-point">
+                            <span class="svg-check"></span>Погоджуюся з розсилкою та приймаю&thinsp;
+                            <a href="" class="agree-link">Умови договору</a>
+                    </label>
+                    </div>
+                    <div class="form-button"><button type="submit" class="submit">Відправити</button></div>
+                    </form>
             </div>
         </div>
 <!-- About Us Section -->
@@ -382,6 +424,22 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="join-us">
+                <form >
+                    <label class="join-email">
+                        <span class="joinus-text">
+                            Підпишіться на розсилку
+                        </span>
+                        <input type="text" name="mail" class="join-place" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="join-button">Підписатися
+                        <svg width="24" height="24" class="join-img">
+                            <use href="./images/icons.svg#icon-icon-join" class="join-svg"></use>
+                        </svg>
+                    </button>
+                </form>
+                
             </div>
         </div>
     </footer>
