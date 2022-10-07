@@ -278,6 +278,10 @@ a {
     background-color: var(--background-color);
     padding: 15px;
 }
+.join-place:focus {
+    outline: none;
+    color: var(--primary-text-color);
+}
 .join-button {
     position: absolute;
     right: 0;
@@ -338,6 +342,7 @@ a {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-style: hidden;
+
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -399,7 +404,7 @@ a {
     width: 11px;
     height: 11px;
 }
-.close-modal:focus .close-icon{
+.close-modal:focus .close-icon, .close-modal:hover .close-icon{
     fill: var(--accent-color);
 }
 .form {
@@ -454,6 +459,8 @@ a {
 }
 .textarea {
     padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
     padding-top: 12px;
     margin-bottom: 25px;
     resize: none;
@@ -479,8 +486,8 @@ a {
 }
 
 .svg-check {
-    width: 15px;
-    height: 14px;
+    width: 16px;
+    height: 15px;
     fill: var(--accent-color);
     display: inline-block;
     border-radius: 2px;
@@ -500,6 +507,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    cursor: pointer;
     
     width: 200px;
     height: 50px;
