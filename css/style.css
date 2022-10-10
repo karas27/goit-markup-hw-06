@@ -217,6 +217,7 @@ a {
 .footer-wrap {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 .logo-footer {
     padding-bottom: 0px;
@@ -255,9 +256,6 @@ a {
 .adress-footer {
     color: var(--white-color);
 }
-.invite-wraper {
-    margin-left: 70px;
-}
 .invite-titel {
     color: var(--white-color);
     font-style: normal;
@@ -277,7 +275,6 @@ a {
     display: flex;
     direction: column;
     width: 570px;
-    margin-left: 93px;
 }
 .join-email {
     font-weight: 700;
@@ -413,6 +410,7 @@ a {
     scroll-behavior: none;
     width: 528px;
     height: 581px;
+    padding: 40px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -440,9 +438,6 @@ a {
 }
 .close-modal:focus .close-icon, .close-modal:hover .close-icon{
     fill: var(--accent-color);
-}
-.form {
-    padding: 40px;
 }
 .form-titel {
     display: block;
@@ -497,7 +492,7 @@ a {
     padding-right: 16px;
     padding-bottom: 12px;
     padding-top: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     resize: none;
     width: 448px;
     height: 120px;
