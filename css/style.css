@@ -464,11 +464,26 @@ color: var(--title-text-color);
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+<<<<<<< Updated upstream
     color: var(--primary-text-color);
     text-align: start;
 }
 .checkpoints {
     padding: 12px 12px 12px 42px;
+=======
+
+    margin-bottom: 4px;
+}
+.checkpoint-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkpoints {
+    position: relative;
+    display: block;
+>>>>>>> Stashed changes
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -507,6 +522,7 @@ overflow: hidden;
 .svg-check {
     width: 16px;
     height: 15px;
+<<<<<<< Updated upstream
     display: flex;
     align-items: center;
     justify-content: center;
@@ -521,6 +537,28 @@ overflow: hidden;
 .agree-link {
     color: var(--accent-color);
     text-decoration: underline;
+=======
+}
+.icon-check {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--title-text-color);
+    background-origin: border-box;
+    width: 17px;
+    height: 15px;
+
+    transition-property: background-color border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-point:checked ~ .svg-check > .icon-check {
+
+    background-color: var(--accent-color);
+    border: none;
+>>>>>>> Stashed changes
 }
 .submit {
     color: var(--white-color);
@@ -536,6 +574,7 @@ overflow: hidden;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+<<<<<<< Updated upstream
     min-width: 200px;
     text-align: center;
     margin-left: auto;
@@ -543,6 +582,27 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+    color: var(--white-color);
+}
+.icon-wraper {
+    position: relative;
+}
+.icon-name, .icon-email, .icon-phone {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 15px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agree-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+>>>>>>> Stashed changes
 }
 /*                    ABOUT US SECTION                    */
 
